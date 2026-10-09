@@ -1,8 +1,7 @@
 import mongoose from 'mongoose';
 
 const MONGO_URI =
-  process.env.MONGO_URI ||
-  'mongodb://admin:secretpassword@localhost:27017/salon-db-test?authSource=admin';
+  process.env.MONGO_URI || 'mongodb://localhost:27017/salon-db-test';
 
 // Connect to the db
 export const connect = async (): Promise<void> => {
